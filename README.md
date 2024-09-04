@@ -1,4 +1,4 @@
-<p align="center"><img src="https://massgrave.dev/img/logo_small.png" alt="MAS Logo"></p>
+<p align="center"><img src="logo.png" alt="MAS Logo"></p>
 
 <h1 align="center">Valorant-Colorbot-V2</h1>
 
