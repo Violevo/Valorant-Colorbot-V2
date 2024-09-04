@@ -1,6 +1,6 @@
-
-<img align = "center" src="https://github.com/user-attachments/assets/dbaff2dc-9e26-457e-8852-bac6eae2844e" alt="logo" width="200">
-
+<div style="text-align: center;">
+<img src="https://github.com/user-attachments/assets/dbaff2dc-9e26-457e-8852-bac6eae2844e" alt="logo" width="200">
+<\div>
 
 <h1 align="center">Valorant-Colorbot-V2 </h1>
 
