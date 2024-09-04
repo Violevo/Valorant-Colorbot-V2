@@ -23,8 +23,8 @@ Latest Version: 2.0
 Release date: 4-Sept-2024
 ```
 
-### Troubleshooting - [https://massgrave.dev/troubleshoot](https://massgrave.dev/troubleshoot)
-### Homepage - [https://massgrave.dev/](https://massgrave.dev/)
+### Troubleshooting - [https://github.com/Violevo/Valorant-Colourbot-V2/issues](https://github.com/Violevo/Valorant-Colourbot-V2/issues)
+### Homepage - [https://github.com/Violevo/Valorant-Colourbot-V2/](https://github.com/Violevo/Valorant-Colourbot-V2/)
 
 ---
 
