@@ -1,4 +1,5 @@
-<p align="center"><img src="logo.png" alt="MAS Logo"></p>
+<p align="center">![logo](https://github.com/user-attachments/assets/90f06d24-7a85-445b-9711-b6671a989200)</p>
+
 
 <h1 align="center">Valorant-Colorbot-V2</h1>
 
