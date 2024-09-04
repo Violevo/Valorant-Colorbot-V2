@@ -1,5 +1,4 @@
-<img src="[url](https://github.com/user-attachments/assets/90f06d24-7a85-445b-9711-b6671a989200)">
-
+<a href="https://ibb.co/7jb33Dm"><img src="https://i.ibb.co/9cGxx05/logo.png" alt="logo" border="0"></a>
 <h1 align="center">Valorant-Colorbot-V2</h1>
 
 <p align="center">Version 2 of my valorant colourbot (was originally detected by VGK after an anticheat update) Not really a serious cheat to be used competitively, more of an idea i am trying out, nevertheless, still should be fully undetected</p>
