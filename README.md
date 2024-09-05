@@ -16,7 +16,12 @@
 ![image](https://github.com/user-attachments/assets/8cf7807a-63ac-4e2c-ae10-908e865e2da0)
 
 ### Color Filtering
+![new](https://github.com/user-attachments/assets/e14c5e33-88c8-4230-8a0f-bbacf46fa2e2)
+
 ### Mouse move
+
+Unfinished
+
 </br>
 
 ```
