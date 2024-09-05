@@ -12,9 +12,9 @@
 ## Installation
 
 ## Code
-# Screengrab
-# Color Filtering
-# Mouse move
+### Screengrab
+### Color Filtering
+### Mouse move
 </br>
 
 ```
