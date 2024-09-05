@@ -25,8 +25,10 @@ Generate a similarity map between the image and the select color (in our case ye
 
 ### Mouse move
 
-subtract the position of the centre of the screen (your crosshair) from the position of the topmost white pixel in the similarity map (should be where the enemys head is)
-Unfinished
+subtract the position of the topmost white pixel in the similarity map (should be where the enemys head is) from the coordinate of the centre of the screen - (540 / 2, 540 / 2) (your crosshair), to give you a resultant vector from the centre of the screen to the enemys head. (in pixels)
+Unfinished -
+
+then, it is as simple as finding a way to move the mouse the same amount as the vector (multiplied by your valorant sensitivity) in pixels, without being picked up by the anticheat (this is harder than it looks)
 
 </br>
 
