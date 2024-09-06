@@ -1,43 +1,55 @@
+# Valorant Colorbot Version 2.0!
 <div align = "center">
     <img src="https://github.com/user-attachments/assets/41c6624a-24a2-4f9d-b433-e7bf8f11ee23" alt="logo" width="130" height="130" style = "border-radius: 25;">
 </div>
 
-<h1 align="center">Valorant Colorbot V2</h1>
+## Version 2 of my valorant colorbot (was originally detected by VGK after an anticheat update) Not really a serious cheat to be used competitively, more of an idea I am trying out, nevertheless, still should be fully undetected
 
-<p align="center">Version 2 of my valorant colourbot (was originally detected by VGK after an anticheat update) Not really a serious cheat to be used competitively, more of an idea i am trying out, nevertheless, still should be fully undetected</p>
+How does it work?
 
-<hr>
-## Installation
+1. Python library [Dxcam](https://pypi.org/project/dxcam-cpp/) captures an image of the screen
+2. The program generates a similarity map between the image captured and the enemy outline color (in our case yellow)
+3. A function is ran to find the topmost white pixel (which should be where the enemys head is) in the similarity map and save its coordinate
+4. Subtract the last coordinate from the coordinate of the centre of your screen and you get a resultant vector from the centre of your screen to the enemys head
+5. Multiply the vector, wich is in pixels by your Valorant sensitivity and you get the amount of pixels your mouse needs to move to lock to the players head
 
-## Features
+## Short explanation
 
-#### Screengrab
-![image](https://github.com/user-attachments/assets/84700e6f-c278-46f3-8a4d-9893ed09ede1)
+<a href="https://www.youtube.com/playlist?list=PLSvCAHoiHC_rqKbcu1ummWVpLTDBNZHH7" target="_blank">
+<img src="http://img.youtube.com/vi/SiGxu2N9ndU/mqdefault.jpg" alt="Watch the series" width="240" height="180" border="10" />
+</a>
 
-Uses python library "dxcam" to capture images of the screen, and saves it to file
+## How to install this example
 
-#### Color Filtering
-![new](https://github.com/user-attachments/assets/e14c5e33-88c8-4230-8a0f-bbacf46fa2e2)
+The easiest way to see how this works is to watch the series, but here's the short version.
 
-Generate a similarity map between the image and the select color (in our case yellow)
+1. Download and unzip
+2. Install [Python](https://www.python.org/downloads/) and dependencies
+3. Modify `settings.py` to your liking
+4. Run the `main.py file` and instructions
 
-#### Mouse move
+## How to tweak this project for your own uses
 
-subtract the position of the topmost white pixel in the similarity map (should be where the enemys head is) from the coordinate of the centre of the screen - (540 / 2, 540 / 2) (your crosshair), to give you a resultant vector from the centre of the screen to the enemys head. (in pixels)
-Unfinished -
+Since this is more of an example project, I'd encourage you to clone and rename this project to use for your own puposes, it's a good starter boilerplate for creating your own valorant cheat.
 
-then, it is as simple as finding a way to move the mouse the same amount as the vector (multiplied by your valorant sensitivity) in pixels, without being picked up by the anticheat (this is harder than it looks)
+## Find a bug?
 
-</br>
+If you found an issue or would like to submit an improvement to this project, please [Submit An Issue](https://github.com/Violevo/Valorant-Colorbot-V2/issues)
 
-```
-Latest Version: 2.0
-Release date: 4-Sept-2024
-```
+## Known issues (Work in progress)
 
-### Troubleshooting - [https://github.com/Violevo/Valorant-Colourbot-V2/issues](https://github.com/Violevo/Valorant-Colourbot-V2/issues)
-### Homepage - [https://github.com/Violevo/Valorant-Colourbot-V2/](https://github.com/Violevo/Valorant-Colourbot-V2/)
+The following bugs/features are yet to be fixed/implemented, but feel free to implement these yourself:
+
+- Triggerbot
+- RCS (recoil control system)
+- Silentaim
+- Flickbot / any other type of aimbots
+- GUI
+- Config Editor
 
 ---
 
 <p align="center">Educational Purposes Only 📚</p>
+
+![image](https://github.com/user-attachments/assets/84700e6f-c278-46f3-8a4d-9893ed09ede1)
+![new](https://github.com/user-attachments/assets/e14c5e33-88c8-4230-8a0f-bbacf46fa2e2)
