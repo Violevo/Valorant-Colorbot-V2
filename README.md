@@ -15,11 +15,9 @@ How does it work?
 
 ## Short explanation
 
-<a href="https://www.youtube.com/playlist?list=PLSvCAHoiHC_rqKbcu1ummWVpLTDBNZHH7" target="_blank">
-<img src="http://img.youtube.com/vi/SiGxu2N9ndU/mqdefault.jpg" alt="Watch the series" width="240" height="180" border="10" />
-</a>
+# Work in progress
 
-## How to install this example
+## How to install
 
 The easiest way to see how this works is to watch the series, but here's the short version.
 
@@ -28,7 +26,7 @@ The easiest way to see how this works is to watch the series, but here's the sho
 3. Modify `settings.py` to your liking
 4. Run the `main.py file` and instructions
 
-## How to tweak this project for your own uses
+## Changes
 
 Since this is more of an example project, I'd encourage you to clone and rename this project to use for your own puposes, it's a good starter boilerplate for creating your own valorant cheat.
 
