@@ -15,7 +15,7 @@ How does it work?
 
 ## Short explanation
 
-# Work in progress
+![GIFMaker_me](https://github.com/user-attachments/assets/5bbf509f-b2b8-4f6d-9455-db4846483bc3)
 
 ## How to install
 
