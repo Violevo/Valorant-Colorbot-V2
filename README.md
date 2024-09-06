@@ -13,7 +13,7 @@ How does it work?
 4. Subtract the last coordinate from the coordinate of the centre of your screen and you get a resultant vector from the centre of your screen to the enemys head
 5. Multiply the vector, wich is in pixels by your Valorant sensitivity and you get the amount of pixels your mouse needs to move to lock to the players head
 
-## Short explanation
+## Video Explanation
 
 ![GIFMaker_me](https://github.com/user-attachments/assets/5bbf509f-b2b8-4f6d-9455-db4846483bc3)
 
