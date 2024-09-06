@@ -1,8 +1,6 @@
 <div align = "center">
-    <img src="https://github.com/user-attachments/assets/1aef7388-2c7f-45e2-b448-4717304d463c" alt="logo" width="130" height="130" style = "border-radius: 25;">
+    <img src="https://github.com/user-attachments/assets/41c6624a-24a2-4f9d-b433-e7bf8f11ee23" alt="logo" width="130" height="130" style = "border-radius: 25;">
 </div>
-
-
 
 <h1 align="center">Valorant Colorbot V2</h1>
 
