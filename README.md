@@ -9,19 +9,19 @@
 <hr>
 ## Installation
 
-## Code
+## Features
 
-### Screengrab
+#### Screengrab
 ![image](https://github.com/user-attachments/assets/84700e6f-c278-46f3-8a4d-9893ed09ede1)
 
 Uses python library "dxcam" to capture images of the screen, and saves it to file
 
-### Color Filtering
+#### Color Filtering
 ![new](https://github.com/user-attachments/assets/e14c5e33-88c8-4230-8a0f-bbacf46fa2e2)
 
 Generate a similarity map between the image and the select color (in our case yellow)
 
-### Mouse move
+#### Mouse move
 
 subtract the position of the topmost white pixel in the similarity map (should be where the enemys head is) from the coordinate of the centre of the screen - (540 / 2, 540 / 2) (your crosshair), to give you a resultant vector from the centre of the screen to the enemys head. (in pixels)
 Unfinished -
