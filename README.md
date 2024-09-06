@@ -1,4 +1,4 @@
-# Valorant Colorbot Version 2.0! <img src="https://github.com/user-attachments/assets/41c6624a-24a2-4f9d-b433-e7bf8f11ee23" alt="logo" width="130" height="130" style = "border-radius: 25;">
+# Valorant Colorbot Version 2.0!
 
 ## Version 2 of my valorant colorbot (was originally detected by VGK after an anticheat update) Not really a serious cheat to be used competitively, more of an idea I am trying out, nevertheless, still should be fully undetected
 
