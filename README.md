@@ -46,8 +46,4 @@ The following bugs/features are yet to be fixed/implemented, but feel free to im
 - Config Editor
 
 ---
-
 <p align="center">Educational Purposes Only 📚</p>
-
-![image](https://github.com/user-attachments/assets/84700e6f-c278-46f3-8a4d-9893ed09ede1)
-![new](https://github.com/user-attachments/assets/e14c5e33-88c8-4230-8a0f-bbacf46fa2e2)
