@@ -40,6 +40,8 @@ The following bugs/features are yet to be fixed/implemented, but feel free to im
 - Silentaim
 - Flickbot / any other type of aimbots
 - GUI
+- Better screen grab (OBS/Discord hijack or Capture Card)
+- Mouse move (spoofed arduino / kmbox)
 - Config Editor
 
 ---
