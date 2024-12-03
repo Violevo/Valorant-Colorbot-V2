@@ -20,11 +20,12 @@ def install_package(package_name, import_name=None):
 install_package("opencv-python-headless", "cv2")
 install_package("numpy")
 install_package("pillow", "PIL")
+install_package("pillow", "ImageDraw")
 install_package("dxcam")
 
 import cv2
 import numpy
-from PIL import Image
+from PIL import Image, ImageDraw
 import dxcam
 
 def Screen_Grab():
@@ -73,17 +74,11 @@ def Color_Filter():
     roi = frame[roi_y:roi_y + crop, roi_x:roi_x + crop]
     roi = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV).astype(numpy.float32)
 
-    similarity_map = get_similarity_map(roi)
-    processed_map = (similarity_map * 255).astype(numpy.uint8)
-    cv2.imshow("Similarity Map", processed_map)
-    cv2.imwrite("new.png", processed_map)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-
 def main():
     Screen_Grab()
     Color_Filter()
 
+    # Debug 
     image = Image.open('new.png')
     image_array = numpy.array(image)
     white_pixels = numpy.argwhere(image_array != 0)
@@ -92,6 +87,11 @@ def main():
         center = (crop_size // 2, crop_size // 2)
         vector = numpy.array(center) - topmost_white_pixel
         print(f"Vector to topmost white pixel: {vector}")
+        draw = ImageDraw.Draw(image)
+        draw.line([center, tuple(topmost_white_pixel[::-1])], fill="red", width=2)
+        
+        # Show the image with the line drawn
+        image.show()
     else:
         print("No white pixels found.")
 
