@@ -74,26 +74,34 @@ def Color_Filter():
     roi = frame[roi_y:roi_y + crop, roi_x:roi_x + crop]
     roi = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV).astype(numpy.float32)
 
+    similarity_map = get_similarity_map(roi)
+    processed_map = (similarity_map * 255).astype(numpy.uint8)
+    cv2.imwrite("new.png", processed_map)
+
 def main():
-    Screen_Grab()
+    #Screen_Grab()
     Color_Filter()
 
     # Debug 
     image = Image.open('new.png')
     image_array = numpy.array(image)
     white_pixels = numpy.argwhere(image_array != 0)
+
     if white_pixels.size > 0:
         topmost_white_pixel = white_pixels[white_pixels[:, 0].argmin()]
         center = (crop_size // 2, crop_size // 2)
         vector = numpy.array(center) - topmost_white_pixel
         print(f"Vector to topmost white pixel: {vector}")
-        draw = ImageDraw.Draw(image)
-        draw.line([center, tuple(topmost_white_pixel[::-1])], fill="red", width=2)
-        
-        # Show the image with the line drawn
+        moveto = list(topmost_white_pixel[::-1])
+        moveto[1] += head_offset 
+        if drawline:
+            draw = ImageDraw.Draw(image)
+            draw.line([center, tuple(moveto)], fill="red", width=2)
         image.show()
     else:
-        print("No white pixels found.")
+        print("No white pixels (enemy) found:")
+        image.show()
+
 
 if __name__ == "__main__":
     main()
