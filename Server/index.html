@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Settings Configurator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="settings-container">
+        <h2>Val config editor</h2>
+        
+        <div class="setting-item">
+            <label class="setting-label">Resolution:</label>
+            <input type="text" id="resolution" value="1920x1080">
+            <span class="tooltiptext">Game resolution</span>
+        </div>
+        
+        <div class="setting-item">
+            <label class="setting-label">Enemy Color:</label>
+            <span class="tooltiptext">Game enemy color</span>
+            <select id="enemyColor">
+                <option value="Left Shift">Red</option>
+                <option value="Right Shift">Purple</option>
+                <option value="Caps Lock">Yellow</option>
+            </select>
+        </div>
+
+        <div class="setting-item">
+            <label class="setting-label">Trigger Area:</label>
+            <input type="number" id="triggerArea" min="0" max="100" value="5">
+            <span class="tooltiptext">Number of pixels scanned</span>
+        </div>
+        
+        <div class="setting-item">
+            <label class="setting-label" for="triggerDelay">Trigger Delay:</label>
+            <input type="range" id="triggerDelay" value="0" min="0" max="500">
+            <label class="sliderValue" id="triggerDelayValue">10</label>
+            <span class="tooltiptext">Extra delay before shooting [in ms]</span>
+        </div>
+        
+        <div class="setting-item">
+            <label class="setting-label" for="colorTolerance">Certainty:</label>
+            <input type="range" id="colorTolerance" min="1" max="100" value="1">
+            <label class="sliderValue" id="colorToleranceValue">70</label>
+            <span class="tooltiptext">How close the color has to be to shoot [in %]</span>
+        </div>
+        
+        <button onclick="saveSettings()">Save Settings</button>
+    </div>
+
+    <div class="stars-container" id="stars-container"></div>
+    <script src="script.js"></script> 
+</body>
+</html>

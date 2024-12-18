@@ -1,0 +1,261 @@
+:root {
+    --background-dark: #000011;
+    --container-dark: rgba(30, 30, 50, 0.9);
+    --text-dark: #f4f4f8;
+    --input-dark: #1a1a2e;
+    --primary-dark: #6a11cb;
+    --secondary-dark: #2575fc;
+    --background: var(--background-dark);
+    --container: var(--container-dark);
+    --text: var(--text-dark);
+    --input: var(--input-dark);
+    --primary: var(--primary-dark);
+    --secondary: var(--secondary-dark);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text);
+    line-height: 1.6;
+    overflow: hidden; /* Prevents stars from overflowing the body */
+    transition: background 0.3s ease;
+}
+
+.stars-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300vw; /* Increased width of the container */
+    height: 300vh; /* Increased height of the container */
+    display: flex;
+    flex-wrap: wrap;
+    pointer-events: none;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    z-index: 1;
+    animation: twinkle linear infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 0.2; }
+}
+
+.settings-container {
+    background: rgba(30, 30, 50, 0.4);
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    position: relative;
+    z-index: 10;
+}
+
+h2 {
+    text-align: center;
+    color: var(--text);
+    margin-bottom: 25px;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+
+.setting-item .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    color: #ffffff49;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    margin-top: 45px;
+    white-space: nowrap;
+  
+    /* Position the tooltip */
+    position: fixed;
+    z-index: 1;
+}
+  
+.setting-item:hover .tooltiptext {
+    visibility: visible;
+}
+
+.setting-label {
+    position: relative;
+    font-weight: 600;
+    color: var(--text);
+    flex: 1;
+    margin-right: 15px;
+    margin-bottom: 8px; /* Add spacing between the label and the slider */
+    text-align: center; /* Center the text if needed */
+}
+
+input, select {
+    flex: 2;
+    background-color: var(--input);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--text);
+    padding: 10px;
+    border-radius: 8px;
+
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: none;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hover state */
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Press (active) state */
+button:active {
+    transform: scale(0.95);
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 3px;
+    background: rgb(255, 255, 255);
+}
+
+input[type="range"]::-moz-range-track {
+    -moz-appearance: none;
+    appearance: none;
+    height: 3px;
+    background: rgb(255, 255, 255);
+}
+  
+input[type="range"]::-ms-track {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  bottom: 8px;
+  background: #222
+    url("http://codemenatalie.com/wp-content/uploads/2019/09/slider-thumb.png")
+    center no-repeat;
+  background-size: 50%;
+  box-shadow: 0px 3px 5px 0px #1a1a2e;
+  cursor: grab;
+    
+    &:active {
+      cursor: grabbing;
+    }
+}
+
+
+input[type="range"]::-moz-range-thumb {
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    bottom: 8px;
+    background: #222
+      url("http://codemenatalie.com/wp-content/uploads/2019/09/slider-thumb.png")
+      center no-repeat;
+    background-size: 50%;
+    box-shadow: 0px 3px 5px 0px #1a1a2e;
+    cursor: grab;
+    
+    &:active {
+      cursor: grabbing;
+    }
+}
+
+input[type="range"]::-ms-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    bottom: 8px;
+    background: #1a1a2e;
+    background-size: 50%;
+    box-shadow: 0px 3px 5px 0px #1a1a2e;
+    cursor: grab;
+    
+    &:active {
+      cursor: grabbing;
+    }
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none; 
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    flex: 2;
+    margin-right: 10px;
+    border:none;
+    background: none;
+}
+
+.sliderValue {
+    position: fixed;
+    margin-left: 430px;
+}

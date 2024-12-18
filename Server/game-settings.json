@@ -1,0 +1,8 @@
+{
+  "resolution": "1920x1080",
+  "enemyColor": "Left Shift",
+  "triggerArea": "70",
+  "sendKey": "VK_NUMPAD0",
+  "triggerDelay": "10",
+  "colorTolerance": "90"
+}
